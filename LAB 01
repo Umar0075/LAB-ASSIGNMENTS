@@ -1,0 +1,50 @@
+# Program to calculate the area of a rectangle
+length = 5  # integer
+width = 3   # integer
+area = length * width
+print("Area of rectangle:", area)
+
+# Program to calculate the area of a circle
+radius = 7.5  # float
+pi = 3.14159  # float
+area = pi * radius ** 2
+print("Area of circle:", area)
+
+# Program to create a list of numbers and calculate their sum
+numbers = [1, 2, 3, 4, 5]
+total = sum(numbers)
+print("Sum of list elements:", total)
+
+# Program to store student names in a tuple
+students = ("Alice", "Bob", "Charlie")
+for student in students:
+    print("Student:", student)
+
+# Program to store and display phone numbers
+phonebook = {"Alice": "123-4567", "Bob": "987-6543"}
+print("Alice's phone number:", phonebook["Alice"])
+
+# Program to store student details
+student = {"name": "John", "age": 21, "GPA": 3.5}
+print("Student name:", student["name"])
+print("Student age:", student["age"])
+
+# Program to create a set and add elements
+fruits = {"apple", "banana", "cherry"}
+fruits.add("orange")
+print("Fruits set:", fruits)
+
+# Program with a frozenset of cities
+cities = frozenset(["New York", "Los Angeles", "Chicago"])
+print("Cities frozenset:", cities)
+
+# Program to evaluate if a number is positive
+number = -5
+is_positive = number > 0
+print("Is the number positive?", is_positive)
+
+# Program to check if two values are equal
+a = 10
+b = 20
+are_equal = a == b
+print("Are the values equal?", are_equal)
