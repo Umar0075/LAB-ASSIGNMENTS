@@ -1,0 +1,71 @@
+# Function to check if a value is True or False
+def check_value(value):
+    if value:
+        return "The value is True."
+    else:
+        return "The value is False."
+
+# Example usage with different values
+values_to_check = [True, False, 1, 0, "Hello", "", None]
+
+for value in values_to_check:
+    print(f"Checking value: {value} -> {check_value(value)}")
+
+
+
+# Function to perform the calculation
+def calculator():
+    print("Welcome to the Python Calculator!")
+
+    # Asking user to input the first operand
+    num1 = float(input("Enter the first number: "))
+    
+    # Asking user to input the operator
+    operator = input("Enter the operator (+, -, *, /): ")
+    
+    # Asking user to input the second operand
+    num2 = float(input("Enter the second number: ")
+    # Performing the operation based on the operator
+    if operator == "+":
+        result = num1 + num2
+    elif operator == "-":
+        result = num1 - num2
+    elif operator == "*":
+        result = num1 * num2
+    elif operator == "/":
+        if num2 != 0:
+            result = num1 / num2
+        else:
+            return "Error: Division by zero is not allowed!"
+    else:
+        return "Invalid operator! Please choose one of (+, -, *, /).
+  return f"The result of {num1} {operator} {num2} is: {result}"
+       # Running the calculator function
+print(calculator())
+
+
+
+
+# 1. String using Double Quotes ("")
+str1 = "This is a string using double quotes."
+print("String using double quotes (\"\"\" \")")
+print(str1)
+
+# 2. String using Single Quotes ('')
+str2 = 'This is a string using single quotes.'
+print("\nString using single quotes ('')")
+print(str2)
+
+# 3. String using Triple Single Quotes ('''''')
+str3 = '''This is a string using triple single quotes.
+It can span multiple lines.
+No need for escape characters here.'''
+print("\nString using triple single quotes (''' ''' )")
+print(str3)
+
+# 4. String using Triple Double Quotes (""""""")
+str4 = """This is a string using triple double quotes.
+It can also span multiple lines.
+Triple double quotes are often used for docstrings in Python."""
+print("\nString using triple double quotes (\"\"\" \"\"\" )")
+print(str4)
