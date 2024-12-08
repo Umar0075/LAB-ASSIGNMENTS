@@ -1,0 +1,32 @@
+#Write a Python function that draws a square using asterisks (*). The side length of the square should be provided by the user?
+def draw_square(side_length):
+    for i in range(side_length):
+        print('*' * side_length)
+
+# Ask the user for input
+side_length = int(input("Enter the side length of the square: "))
+draw_square(side_length)
+
+
+
+#Write a Python function that takes a list of numbers as input and returns the sum of only the even numbers?
+def sum_of_even_numbers(numbers):
+   
+ # Use a list comprehension to filter even numbers and sum them
+    return sum(number for number in numbers if number % 2 == 0)
+
+# Ask the user for input
+numbers = list(map(int, input("Enter a list of numbers separated by spaces: ").split()))
+print("The sum of the even numbers is:", sum_of_even_numbers(numbers))
+
+
+
+#Write a Python function that takes a number as input and counts down to zero, printing each number?
+def countdown_to_zero(number):
+    while number >= 0:
+        print(number)
+        number -= 1
+
+# Ask the user for input
+number = int(input("Enter a number to start the countdown: "))
+countdown_to_zero(number)
